@@ -1,4 +1,4 @@
-import { createContext, FC, ReactNode, useCallback, useContext, useState } from 'react'
+import { createContext, type FC, type ReactNode, useCallback, useContext, useState } from 'react'
 
 import type { Error as ErrorProps } from '../models'
 

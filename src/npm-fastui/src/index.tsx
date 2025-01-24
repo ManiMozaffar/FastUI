@@ -1,10 +1,9 @@
-import { FC, ReactNode } from 'react'
-
+import type { FC, ReactNode } from 'react'
 import type { FastProps } from './models'
 
 import { LocationProvider } from './hooks/locationContext'
 import { FastUIController } from './controller'
-import { ClassNameContext, ClassNameGenerator } from './hooks/className'
+import { ClassNameContext, type ClassNameGenerator } from './hooks/className'
 import { ErrorContextProvider } from './hooks/error'
 import { ConfigContext } from './hooks/config'
 import { DevReload } from './dev'

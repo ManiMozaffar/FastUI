@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import type { FC, ReactNode } from 'react'
 
 export const DefaultNotFound: FC<{ url: string }> = ({ url }) => <div>Page not found: {url}</div>
 

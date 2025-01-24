@@ -1,6 +1,6 @@
-import { FC, useState } from 'react'
+import { type FC, useState } from 'react'
 import AsyncSelect from 'react-select/async'
-import Select, { StylesConfig } from 'react-select'
+import Select, { type StylesConfig } from 'react-select'
 
 import type {
   FormFieldInput,

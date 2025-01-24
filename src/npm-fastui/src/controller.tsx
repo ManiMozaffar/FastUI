@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from 'react'
 
 import { LocationContext } from './hooks/locationContext'
 import { ServerLoadFetch } from './components/ServerLoad'
-import { loadEvent, LoadEventDetail } from './events'
+import { loadEvent, type LoadEventDetail } from './events'
 
 export function FastUIController() {
   const { fullPath } = useContext(LocationContext)

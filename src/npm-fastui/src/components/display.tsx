@@ -1,5 +1,4 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { AnyEvent, DisplayMode, Display, JsonData, FastProps } from '../models'
 
 import { useCustomRender } from '../hooks/config'
@@ -228,7 +227,7 @@ const DisplayCurrency: FC<{ value: JSONPrimitive }> = ({ value }) => {
     return <DisplayNull />
   } else {
     return Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(
-      typeof value === 'string' ? parseFloat(value) : value,
+      typeof value === 'string' ? Number.parseFloat(value) : value,
     )
   }
 }

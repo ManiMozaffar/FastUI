@@ -1,4 +1,4 @@
-import { FC, useContext, useEffect } from 'react'
+import { type FC, useContext, useEffect } from 'react'
 
 import { sleep } from './tools'
 import { ErrorContext } from './hooks/error'
@@ -51,7 +51,7 @@ const DevReloadActive = () => {
         if (response.ok && text.startsWith('fastui-dev-reload')) {
           failCount = 0
           const valueMatch = text.match(/(\d+)$/)
-          const value = valueMatch ? parseInt(valueMatch[1]!) : 0
+          const value = valueMatch ? Number.parseInt(valueMatch[1]!) : 0
           if (value !== lastValue) {
             lastValue = value
             // wait long enough for the server to be back online

@@ -1,5 +1,6 @@
-import { FC } from 'react'
-import { components, models, renderClassName } from 'fastui'
+import { components, type models, renderClassName } from 'fastui'
+
+import type { FC } from 'react'
 
 interface Link {
   Display: FC

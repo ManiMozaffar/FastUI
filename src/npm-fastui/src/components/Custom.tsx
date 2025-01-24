@@ -1,5 +1,4 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { Custom } from '../models'
 
 import { DisplayError } from '../hooks/error'
@@ -13,7 +12,7 @@ export const CustomComp: FC<Custom> = (props) => {
   if (library) {
     description.push(`from library "${library}"`)
   }
-  description.push(`has no implementation with this frontend app.`)
+  description.push('has no implementation with this frontend app.')
 
   return (
     <DisplayError title="Custom component without implementation" description={description.join(' ')}>

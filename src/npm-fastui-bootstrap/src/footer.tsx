@@ -1,5 +1,6 @@
-import { FC } from 'react'
-import { components, models, useClassName } from 'fastui'
+import { components, type models, useClassName } from 'fastui'
+
+import type { FC } from 'react'
 
 export const Footer: FC<models.Footer> = (props) => {
   const links = props.links.map((link) => {

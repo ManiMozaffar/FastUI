@@ -1,7 +1,8 @@
-import { FC } from 'react'
-import { components, events, renderClassName, EventContextProvider, models } from 'fastui'
+import { components, events, renderClassName, EventContextProvider, type models } from 'fastui'
 import BootstrapToast from 'react-bootstrap/Toast'
 import BootstrapToastContainer from 'react-bootstrap/ToastContainer'
+
+import type { FC } from 'react'
 
 export const Toast: FC<models.Toast> = (props) => {
   const { className, title, body, position, openTrigger, openContext } = props

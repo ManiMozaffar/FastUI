@@ -1,11 +1,10 @@
-import { FC, CSSProperties } from 'react'
-
+import type { FC, CSSProperties } from 'react'
 import type { Table } from '../models'
 
 import { asTitle } from '../tools'
 import { useClassName } from '../hooks/className'
 
-import { DisplayComp, DisplayLookupProps, DataModel, renderEvent } from './display'
+import { DisplayComp, type DisplayLookupProps, type DataModel, renderEvent } from './display'
 
 export const TableComp: FC<Table> = (props) => {
   const { columns, data, noDataMessage } = props

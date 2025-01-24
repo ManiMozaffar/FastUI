@@ -1,4 +1,4 @@
-import { FC, MouseEventHandler, ReactNode, useContext } from 'react'
+import { type FC, type MouseEventHandler, type ReactNode, useContext } from 'react'
 
 import type { Link, AnyEvent } from '../models'
 

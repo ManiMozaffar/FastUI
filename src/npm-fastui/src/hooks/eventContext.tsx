@@ -1,4 +1,4 @@
-import { createContext, FC, ReactNode, useCallback, useContext } from 'react'
+import { createContext, type FC, type ReactNode, useCallback, useContext } from 'react'
 
 export type ContextType = Record<string, string | number>
 

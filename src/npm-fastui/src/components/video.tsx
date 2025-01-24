@@ -1,5 +1,4 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { Video } from '../models'
 
 export const VideoComp: FC<Video> = (props) => {

@@ -1,6 +1,7 @@
-import { FC } from 'react'
-import { components, useClassName, models } from 'fastui'
+import { components, useClassName, type models } from 'fastui'
 import BootstrapNavbar from 'react-bootstrap/Navbar'
+
+import type { FC } from 'react'
 
 export const Navbar: FC<models.Navbar> = (props) => {
   const startLinks = props.startLinks.map((link) => {

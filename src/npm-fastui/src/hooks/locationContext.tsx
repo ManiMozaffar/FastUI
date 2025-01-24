@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useEffect, useState, useCallback, useContext } from 'react'
+import { createContext, type ReactNode, useEffect, useState, useCallback, useContext } from 'react'
 
 import { fireLoadEvent } from '../events'
 

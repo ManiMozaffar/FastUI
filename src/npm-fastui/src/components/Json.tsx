@@ -1,5 +1,4 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { Json } from '../models'
 
 import { CodeComp } from './Code'

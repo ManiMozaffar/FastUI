@@ -1,5 +1,4 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { FastProps, Display, Text, ServerLoad, PageTitle, FireEvent } from '../models'
 
 import { DisplayError } from '../hooks/error'

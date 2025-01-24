@@ -1,5 +1,4 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { Button } from '../models'
 
 import { useClassName } from '../hooks/className'

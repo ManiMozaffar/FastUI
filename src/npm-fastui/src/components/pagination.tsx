@@ -1,5 +1,4 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { Pagination, Link } from '../models'
 
 import { useClassName } from '../hooks/className'

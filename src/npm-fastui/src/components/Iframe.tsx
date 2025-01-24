@@ -1,5 +1,4 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { Iframe } from '../models'
 
 export const IframeComp: FC<Iframe> = (props) => {

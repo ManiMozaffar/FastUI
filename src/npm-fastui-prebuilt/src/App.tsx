@@ -1,6 +1,7 @@
-import { CustomRender, FastUI, renderClassName } from 'fastui'
+import { type CustomRender, FastUI, renderClassName } from 'fastui'
 import * as bootstrap from 'fastui-bootstrap'
-import { FC, ReactNode } from 'react'
+
+import type { FC, ReactNode } from 'react'
 
 export default function App() {
   return (

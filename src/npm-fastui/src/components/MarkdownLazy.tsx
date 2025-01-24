@@ -1,7 +1,7 @@
-import { FC, MouseEventHandler, ReactNode } from 'react'
-import ReactMarkdown, { Components } from 'react-markdown'
+import ReactMarkdown, { type Components } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
+import type { FC, MouseEventHandler, ReactNode } from 'react'
 import type { Markdown, Code, AnyEvent } from '../models'
 
 import { useClassName } from '../hooks/className'

@@ -1,11 +1,10 @@
-import { FC } from 'react'
-
+import type { FC } from 'react'
 import type { Details, Display, DisplayMode } from '../models'
 
 import { asTitle } from '../tools'
 import { useClassName } from '../hooks/className'
 
-import { DisplayComp, DisplayLookupProps, renderEvent } from './display'
+import { DisplayComp, type DisplayLookupProps, renderEvent } from './display'
 
 export const DetailsComp: FC<Details> = (props) => (
   <dl className={useClassName(props)}>

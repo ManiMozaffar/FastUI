@@ -1,6 +1,6 @@
-import { FC } from 'react'
+import type { FC } from 'react'
+import type { Div, Page } from '../models'
 
-import { Div, Page } from '../models'
 import { useClassName } from '../hooks/className'
 
 import { AnyCompList } from './index'

@@ -111,7 +111,7 @@ export function useSSE(url: string, onMessage: (data: any) => void, method?: Met
     fetchEventSource(url, {
       method,
       headers,
-      onopen: async function (response) {
+      onopen: async (response) => {
         const status = await checkResponse(url, response, [200])
         const ct = response.headers.get('content-type')
         if (!ct || !ct.startsWith(EventStreamContentType)) {

@@ -1,16 +1,16 @@
-import { FC, FormEvent, useContext, useState, useRef, useCallback, useEffect } from 'react'
+import { type FC, type FormEvent, useContext, useState, useRef, useCallback, useEffect } from 'react'
 
 import type { Form, ModelForm, FastProps } from '../models'
+import type { FormFieldProps } from './FormField'
 
 import { useClassName } from '../hooks/className'
-import { useRequest, RequestArgs } from '../tools'
+import { useRequest, type RequestArgs } from '../tools'
 import { LocationContext } from '../hooks/locationContext'
 import { usePageEventListen } from '../events'
 
 import { AnyCompList } from './index'
 
 import { ButtonComp } from './button'
-import { FormFieldProps } from './FormField'
 
 export const FormComp: FC<Form | ModelForm> = (props) => {
   const formRef = useRef<HTMLFormElement>(null)
@@ -60,7 +60,10 @@ export const FormComp: FC<Form | ModelForm> = (props) => {
         return
       }
 
-      const requestArgs: RequestArgs = { url: submitUrl, expectedStatus: [200, 422] }
+      const requestArgs: RequestArgs = {
+        url: submitUrl,
+        expectedStatus: [200, 422],
+      }
       if (method === 'GET') {
         // as above with URLSearchParams
         requestArgs.query = new URLSearchParams(formData as any)

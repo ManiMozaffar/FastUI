@@ -1,7 +1,7 @@
 import path from 'path'
 
 import react from '@vitejs/plugin-react-swc'
-import { defineConfig, HttpProxy } from 'vite'
+import { defineConfig, type HttpProxy } from 'vite'
 
 export default () => {
   const serverConfig = {

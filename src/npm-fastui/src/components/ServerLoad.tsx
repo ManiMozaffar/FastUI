@@ -1,9 +1,9 @@
-import { FC, useCallback, useContext, useEffect, useState } from 'react'
+import { type FC, useCallback, useContext, useEffect, useState } from 'react'
 
 import type { ServerLoad, PageEvent, FastProps } from '../models'
 
 import { ErrorContext } from '../hooks/error'
-import { useRequest, useSSE, Method } from '../tools'
+import { useRequest, useSSE, type Method } from '../tools'
 import { DefaultNotFound, DefaultTransition } from '../Defaults'
 import { ConfigContext } from '../hooks/config'
 import { usePageEventListen } from '../events'

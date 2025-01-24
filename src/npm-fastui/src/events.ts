@@ -1,9 +1,9 @@
 import { useContext, useState, useEffect, useCallback } from 'react'
 
 import type { PageEvent, AnyEvent } from './models'
+import type { ContextType } from './hooks/eventContext'
 
 import { LocationContext } from './hooks/locationContext'
-import { ContextType } from './hooks/eventContext'
 import { AUTH_TOKEN_KEY } from './tools'
 
 export interface PageEventDetail {
