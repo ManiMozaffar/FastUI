@@ -349,7 +349,7 @@ class Modal(BaseModel, extra='forbid'):
     class_name: _class_name.ClassNameField = None
     """Optional class name to apply to the modal's HTML component."""
 
-    exit_on_click_outside: bool = False
+    exitOnClickOutside: bool = False
 
     type: _t.Literal['Modal'] = 'Modal'
     """The type of the component. Always 'Modal'."""
