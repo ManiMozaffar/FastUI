@@ -9,8 +9,8 @@
     "dev": "npm run --workspace=@pydantic/fastui-prebuilt dev",
     "build": "npm run --workspaces prepublishOnly",
     "typecheck": "npm run --workspaces typecheck",
-    "lint": "eslint src --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
-    "lint-fix": "npm run lint -- --fix",
+    "lint": "biome lint src --max-diagnostics=0",
+    "lint-fix": "biome lint src --apply",
     "prettier": "prettier --write",
     "format": "npm run prettier -- . && npm run lint-fix",
     "generate-json-schema": "./src/python-fastui/tests/react-fastui-json-schema.sh"
