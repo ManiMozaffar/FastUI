@@ -9,8 +9,8 @@
     "dev": "npm run --workspace=@pydantic/fastui-prebuilt dev",
     "build": "npm run --workspaces prepublishOnly",
     "typecheck": "npm run --workspaces typecheck",
-    "lint": "eslint src --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
-    "lint-fix": "npm run lint -- --fix",
+    "lint": "biome lint src --max-diagnostics=0",
+    "lint-fix": "biome lint src --apply",
     "prettier": "prettier --write",
     "format": "npm run prettier -- . && npm run lint-fix",
     "generate-json-schema": "./src/python-fastui/tests/react-fastui-json-schema.sh"
@@ -29,6 +29,7 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "biome": "^0.3.3",
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
@@ -40,6 +41,7 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
+    "@biomejs/biome": "^1.9.4",
     "prettier": "^3.2.5",
     "typedoc": "^0.25.13"
   }

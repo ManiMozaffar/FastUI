@@ -238,6 +238,7 @@ export interface Modal {
   openTrigger?: PageEvent
   openContext?: ContextType
   className?: ClassName
+  exitOnClickOutside?: boolean
   type: 'Modal'
 }
 /**
